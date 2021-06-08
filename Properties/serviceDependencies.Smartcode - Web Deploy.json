@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/smartcodedbserver/databases/Smartcode_db",
+      "type": "mssql.azure",
+      "connectionId": "Data/SmartcodeConnection/ConnectionString",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
