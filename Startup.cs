@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Smartcode.Data;
+using Smartcode.Models;
 
 namespace Smartcode
 {
@@ -27,7 +28,7 @@ namespace Smartcode
         {
             services.AddControllersWithViews();
             services.AddDbContextPool<Smartcodecontext>(opt => opt.UseSqlServer(Configuration["Data:SmartcodeConnection:ConnectionString"]));
-           // services.BuildServiceProvider().GetService<Smartcodecontext>().Database.Migrate();
+            services.AddScoped<IYourMessage, YourMessageService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

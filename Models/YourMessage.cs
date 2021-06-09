@@ -18,10 +18,9 @@ namespace Smartcode.Models
         public string PhoneNumber { get; set; }
         [DataType(DataType.EmailAddress), Display(Name = "Email Address"), Required]
         public string Email { get; set; }
-        //public string OurService { get; set; }
         [DataType(DataType.MultilineText), Display(Name = "Your Message"), Required]
         public string Message { get; set; }
-        [Required, /*DisplayFormat(DataFormatString ="{0:dd/mm/year}"),*/ DataType(DataType.Date)]
+        [Required, DisplayFormat(DataFormatString ="{0:dd/mm/year}"), DataType(DataType.Date)]
         public DateTime Date { get; set; }
 
 

@@ -14,10 +14,12 @@ namespace Smartcode.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly Smartcodecontext _smartcodecontext;
-        public HomeController(ILogger<HomeController> logger, Smartcodecontext smartcodecontext)
+        private readonly IYourMessage _yourMessage;
+        public HomeController(ILogger<HomeController> logger, Smartcodecontext smartcodecontext, IYourMessage yourMessage)
         {
             _logger = logger;
             _smartcodecontext = smartcodecontext;
+            _yourMessage = yourMessage;
         }
 
         public IActionResult Index()
@@ -47,15 +49,15 @@ namespace Smartcode.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _smartcodecontext.yourMessage.AddAsync(yourMessage);
-              await  _smartcodecontext.SaveChangesAsync();
+               await _yourMessage.AddMessage(yourMessage);
+                 ViewData["YourMessage"] = "Thank you, your message have gotten to us, we will get back to you shortly.";
                 ModelState.Clear();
-                ViewData["YourMessage"] = "Thank you, your message have gotten to us, we will get back to you shortly.";
-                RedirectToAction("Index", "Home");
+                RedirectToAction("Index","HomeController");
             }
             return View();
         }
 
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
