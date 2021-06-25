@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         })
 
-    $("#contact").on("click", function () {
+    $("#contac").on("click", function () {
 
         window.location="Home/index/#contacthere"
     })

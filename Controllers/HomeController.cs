@@ -52,12 +52,41 @@ namespace Smartcode.Controllers
                await _yourMessage.AddMessage(yourMessage);
                  ViewData["YourMessage"] = "Thank you, your message have gotten to us, we will get back to you shortly.";
                 ModelState.Clear();
-                RedirectToAction("Index","HomeController");
+            return    RedirectToAction("Index","Home");
             }
             return View();
         }
 
-        
+
+
+        [HttpGet]
+        public IActionResult LetsHearYou()
+        {
+
+            YourMessage yourMessage = new YourMessage
+            {
+                Date = DateTime.Today
+            };
+
+            return View(yourMessage);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LetsHearYou(YourMessage yourMessage)
+        {
+            if (ModelState.IsValid)
+            {
+                await _yourMessage.AddMessage(yourMessage);
+                ViewData["YourMessage"] = "Thank you, your message have gotten to us, we will get back to you shortly.";
+                ModelState.Clear();
+                return RedirectToAction("Index", "Home");
+            }
+            return View();
+        }
+
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+@*<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="K2qqBRU_hD04aIykwJ0UTxELobrbgvGp4OlfIXlL8W4" />
@@ -8,33 +8,132 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/StyleSheet1.css" rel="stylesheet" />
+</head>*@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     @*SEO Meta Tags*@ 
+    <meta name="description" content="IT solutions provider">
+    <meta name="author" content="Smartcode Solutions">
+
+     @*OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn*@ 
+    <meta property="og:site_name" content="" />  @*website name*@ 
+    <meta property="og:site" content="" />  @*website link*@ 
+    <meta property="og:title" content="" />  @*title shown in the actual shared post*@ 
+    <meta property="og:description" content="" />  @*description shown in the actual shared post*@ 
+    <meta property="og:image" content="" />  @*image link, make sure it's jpg*@ 
+    <meta property="og:url" content="" />  @*where do you want your post to link to*@ 
+    <meta name="twitter:card" content="summary_large_image">  @*to have large image post format in Twitter*@ 
+     @*Webpage Title*@ 
+    <title>Smartcode Solutions</title>
+
+     @*Styles*@ 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+     @*Favicon*@  
+   @* <link rel="icon" href="images/favicon.png">*@
 </head>
 <body>
-    <header class="">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow mb-3" style="background-image:linear-gradient(green,white)">
-            <div class="container ">
-                <a class="navbar-brand font-weight-bolder text-white" asp-area="" asp-controller="Home" asp-action="Index"><span class="display-4">S</span>martcode <span class="display-4">S</span>olutions</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex ">
-                    <ul class="navbar-nav flex-grow-1 justify-content-md-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-white fontfam" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fontfam" id="about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fontfam" id="contact">Contact</a>
-                        </li>
-                    </ul>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="h1-large">DATA <br> OUR<br>CORE DRIVE</h1>
+                </div>  @*end of col*@ 
+                <div class="col-lg-6">
+                    <div class="button-container">
+                        <a class="btn-solid-lg page-scroll" href="#intro">Discover</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact">Contact</a>
+                    </div>  @*end of button-container*@ 
+                </div>  @*end of col*@ 
+            </div>  @*end of row*@ 
+        </div>  @*end of container*@ 
+    </header>  @*end of header*@ 
+    @*<header class="">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow mb-3" style="background-image:linear-gradient(green,white)">
+                <div class="container ">
+                    <a class="navbar-brand font-weight-bolder text-white" asp-area="" asp-controller="Home" asp-action="Index"><span class="display-4">S</span>martcode <span class="display-4">S</span>olutions</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex ">
+                        <ul class="navbar-nav flex-grow-1 justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fontfam" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fontfam" id="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fontfam" id="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fluid">
+            </nav>
+        </header>*@
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            @* <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>*@
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text text-white" asp-action="Index" asp-controller="Home"></a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    @*<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://www.facebook.com/Smartcodepage">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+    <div clas="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -42,12 +141,21 @@
 
     <footer class="border-top footer text-muted">
         <div class="container text-center">
-            &copy; @DateTime.Now.Year - Smartcode Solution @*- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
+            &copy; @DateTime.Now.Year - Smartcode Solutions @*- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
