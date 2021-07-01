@@ -50,11 +50,11 @@ namespace Smartcode.Controllers
             if (ModelState.IsValid)
             {
                await _yourMessage.AddMessage(yourMessage);
-                 ViewData["YourMessage"] = "Thank you, your message have gotten to us, we will get back to you shortly.";
+                 TempData["YourMessage"] = "Thank you, we have received your message.";
                 ModelState.Clear();
-            return    RedirectToAction("Index","Home");
+            return    RedirectToAction("Index","Home", "message");
             }
-            return View();
+            return RedirectToAction("Index", "Home", "message");
         }
 
 
