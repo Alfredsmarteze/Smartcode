@@ -474,10 +474,19 @@ a:hover {
 /*****************/
 /*    Header     */
 /*****************/
-.header {
+/*header-background.jpg*/
+/*center center no-repeat)*/
+/*.header {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 	background: url('../images/header-background.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}*/
+.header {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background: url('../images/Digital-Eye-Background.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }

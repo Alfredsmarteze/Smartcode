@@ -1,24 +1,17 @@
-﻿@model Smartcode.Models.YourMessage
-@{
-    ViewData["Title"] = "Home Page";
-}
-<br>
-
-<!-- Introduction -->
+﻿ <!-- Introduction -->
 <div id="intro" class="basic-1 bg-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h1>We help business owners create and launch digital products</h1>
-            </div> <!-- end of col -->
-            <!--<div class="col-lg-6">
-                <div class="text-container">
+                <h1 class="text-center justify-content-center">We help business owners create and launch digital products</h1>
+            </div> <!-- end of col --
+            @*<div class="col-lg-6">*@
+                @*<div class="text-container">
                     <p><strong>Planing</strong> led ask possible mistress relation elegance eat likewise debatin. By message or am nothing amongst chiefly address of research</p>
                     <p><strong>Designing</strong> the its enable direct men depend highly. Ham windows sixte who inquiry fortune demands. Is be force upon and of course</p>
                     <p><strong>Development</strong> sang fond must shew. Really boy law county she unable her sister. Feet you off its. Among are leave law built now</p>
-                </div>-->
-            <!-- end of text-container -->
-            <!--</div>--> <!-- end of col -->
+                </div*@> <!-- end of text-container -->
+            @* </div>*@ <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of basic-1 -->
@@ -63,7 +56,6 @@
     </div> <!-- end of container -->
 </div> <!-- end of basic-3 -->
 <!-- end of project 2 -->
-
 <!-- Project 3 -->
 <div class="basic-4">
     <div class="container">
@@ -101,13 +93,12 @@
                     <i class="fas fa-chevron-right"></i>
                     <div class="step">DEVELOP</div>
                 </div> <!-- end of step-container -->
-                @*  <p>Abroad no chatty others my silent an. Fat way appear denote who wholly narrow gay settle. Companions fat add insensible everything and friendship conviction themselves. Theirs months ten and more words are  here had</p>*@
+              @*  <p>Abroad no chatty others my silent an. Fat way appear denote who wholly narrow gay settle. Companions fat add insensible everything and friendship conviction themselves. Theirs months ten and more words are  here had</p>*@
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of basic-5 -->
 <!-- end of process -->
-
 <!-- About -->
 <div id="about" class="counter">
     <div class="container">
@@ -135,12 +126,12 @@
                         </div>
                     </li>
                     @*<li class="d-flex">
-                            <h5 class="number">3.</h5>
-                            <div class="flex-grow-1">
-                                <h5>Partnerships with marketing agencies</h5>
-                                <div class="text">Be at miss or each good play home they. It leave taste mr in it fancy. She son lose does fond bred gave lady get. Sir her company</div>
-                            </div>
-                        </li>*@
+                        <h5 class="number">3.</h5>
+                        <div class="flex-grow-1">
+                            <h5>Partnerships with marketing agencies</h5>
+                            <div class="text">Be at miss or each good play home they. It leave taste mr in it fancy. She son lose does fond bred gave lady get. Sir her company</div>
+                        </div>
+                    </li>*@
                 </ul>
             </div> <!-- end of col -->
             <div class="col-xl-6">
@@ -148,19 +139,19 @@
                 <!-- Counter -->
                 <div class="counter-container">
                     <div class="counter-cell">
-                        <div data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="3" class="purecounter">1</div>
+                        <div data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="3" class="purecounter">1</div>
                         <div class="counter-info">Happy Customers</div>
                     </div> <!-- end of counter-cell -->
                     <div class="counter-cell">
-                        <div data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1.5" class="purecounter">1</div>
+                        <div data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1.5" class="purecounter">1</div>
                         <div class="counter-info">Issues Solved</div>
                     </div> <!-- end of counter-cell -->
                     <div class="counter-cell">
-                        <div data-purecounter-start="0" data-purecounter-end="59" data-purecounter-duration="3" class="purecounter">1</div>
+                        <div data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="3" class="purecounter">1</div>
                         <div class="counter-info">Good Reviews</div>
                     </div> <!-- end of counter-cell -->
                     <div class="counter-cell">
-                        <div data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="3" class="purecounter">1</div>
+                        <div data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="3" class="purecounter">1</div>
                         <div class="counter-info">Case Studies</div>
                     </div> <!-- end of counter-cell -->
                 </div> <!-- end of counter-container -->
@@ -171,118 +162,74 @@
     </div> <!-- end of container -->
 </div> <!-- end of counter -->
 <!-- end of about -->
+<!-- Testimonials -->
+<div class="slider-1">
+    <img class="quotes-decoration" src="images/quotes.svg" alt="alternative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
 
 
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <img class="testimonial-image" src="~/images/Smart.jpg" alt="alternative">
+                                <p class="testimonial-text">“Alfred a .Net Core expert and a trained personnel in software engineering has earned Microsoft Certifications. For years now, he has been in this ICT industries with hands on desk.”</p>
+                                <div class="testimonial-author">Alfred Smart</div>
+                                <div class="testimonial-position">Team Leader</div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
 
-    <!-- Testimonials -->
-    <div class="slider-1">
-        <img class="quotes-decoration" src="~/images/quotes.svg" alt="alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
 
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
+                        </div> <!-- end of swiper-wrapper -->
+                        <!-- Add Arrows -->
+                        @*<div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>*@
+                        <!-- end of add arrows -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="~/images/Smart.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Alfred a .Net Core expert and a trained personnel in software engineering has earned Microsoft Certifications. For years now, he has been in this ICT industries with hands on desk.”</p>
-                                    <div class="testimonial-author">Alfred Smart</div>
-                                    <div class="testimonial-position">Team Lead</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                <!-- Slide -->
-                                <!-- end of slide -->
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of card slider -->
 
-                            </div> <!-- end of swiper-wrapper -->
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of slider-1 -->
+<!-- end of testimonials -->
+<!-- Contact -->
+<div id="contact" class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Let us know about your project</h2>
+                @*  <p class="p-heading">Of will at sell well at as. Too want but tall nay like old removing yourself today</p>*@
+                <ul class="list-unstyled li-space-lg">
+                    <li><i class="fas fa-map-marker-alt"></i> &nbsp;8A, Dr Ladi Alakija Avenue, Lekki Phase 1, Lagos</li>
+                    <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:08053059709">+2348053059709</a></li>
+                    <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:smartcodesolutiontech@gmail.com">Mail Us</a></li>
+                </ul>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
 
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
-   
-    <!-- Contact -->
-    <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Let us know about your project</h2>
-                    @* <p class="p-heading">Of will at sell well at as. Too want but tall nay like old removing yourself today</p>*@
-                    <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;8A, Dr Ladi Alakija Avenue, Lekki Phase 1, Lagos</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+2348053059709</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:smartcodesolutiontech@gmail.com">Mail Us</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-
-                    <!-- Contact Form -->
-                    @*    <partial name="_YourMessage.cshtml">*@
+                <!-- Contact Form -->
+                <div id="message">
+                    <partial name="_YourMessage">
+                </div>
                     <!-- end of contact form -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of contact -->
-@* Your Message *@
-    <div id="message">
-        <partial name="_YourMessage">
-            @*@TempData["YourMessage"]*@
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                        <h6>About Smartcode Solutions</h6>
-                        <p class="p-small">Smartcode is a software solution provider for business, church.</p>
-                        <p class="p-small">We create platform that will meet your business goal.</p>
-                        <p class="p-small"> We exist to make business ease for everybody.</p>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        @*<h6>Links</h6>*@
-                        @*<ul class="list-unstyled li-space-lg p-small">
-                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                                <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#projects">Projects</a>, <a class="page-scroll" href="#services">Services</a>, <a class="page-scroll" href="#contact">Contact</a></li>
-                            </ul>*@
-                        <p class="p-small">We would love to hear from you <a href="mailto:smartcodesolutiontech@gmail.com"><strong>smartcodesolutiontech@gmail.com</strong></a></p>
-                    </div><!-- end of footer-col -->
-
-
-                    <div class="footer-col third ">
-                        <span class="fa-stack">
-                            <a href="https://www.facebook.com/Smartcodepage">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-
-
-                    </div> <!-- end of footer-col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->
-    <!-- end of footer -->
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-1 -->
+<!-- end of contact -->
+<!-- Back To Top Button -->
+<button onclick="topFunction()" id="myBtn">
+    <img src="images/up-arrow.png" alt="alternative">
+</button>
+<!-- end of back to top button -->
